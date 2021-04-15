@@ -10,13 +10,13 @@ body {
 }
 
 .list-timeline:before {
-    width: 1px;
+    width: 2px;
     background: #ccc;
     position: absolute;
-    left: 6px;
-    top: 0;
-    bottom: 0;
-    height: 100%;
+    left: 5px;
+    top: 10px;
+    bottom: 0px;
+    height: 80%;
     content: ''
 }
 
