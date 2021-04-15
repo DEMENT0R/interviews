@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css?v2">
     <link rel="icon" href="/favicon.png">
     <title>Расписание встреч</title>
 </head>
@@ -16,7 +16,7 @@
     <p class="text-sm text-dark mt-0 mb-5">Время указано московское, обычно 13:00-17:00</p>
     <?php
     $days = [
-        "Четверг, 16 апреля" => [
+        "Четверг, 15 апреля" => [
             "13:00 - 14:00" => [
                 "text" => "Звонок",
                 "color" => "primary",
@@ -34,7 +34,7 @@
                 "color" => "dark",
             ],
         ],
-        "Пятница, 17 апреля" => [
+        "Пятница, 16 апреля" => [
             "13:00 - 14:00" => [
                 "text" => "Собеседование",
                 "color" => "success",
@@ -52,7 +52,7 @@
                 "color" => "dark",
             ],
         ],
-        "Суббота, 18 апреля" => [
+        "Суббота, 17 апреля" => [
             "13:00 - 14:00" => [
                 "text" => "Свободно",
                 "color" => "dark",
@@ -70,7 +70,7 @@
                 "color" => "dark",
             ],
         ],
-        "Воскресенье, 19 апреля" => [
+        "Воскресенье, 18 апреля" => [
             "13:00 - 14:00" => [
                 "text" => "Встреча",
                 "color" => "success",
@@ -88,7 +88,7 @@
                 "color" => "dark",
             ],
         ],
-        "Понедельник, 20 апреля" => [
+        "Понедельник, 19 апреля" => [
             "13:00 - 14:00" => [
                 "text" => "Свободно",
                 "color" => "dark",
@@ -101,7 +101,7 @@
                 "text" => "Собеседование",
                 "color" => "success",
             ],
-            "16:00 - 17:00" => [
+            "16:30 - 17:00" => [
                 "text" => "Свободно",
                 "color" => "dark",
             ],
