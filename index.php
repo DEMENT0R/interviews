@@ -97,11 +97,11 @@
                 "text" => "Свободно",
                 "color" => "dark",
             ],
-            "15:00 - 16:30" => [
+            "15:00 - 16:00" => [
                 "text" => "Свободно",
                 "color" => "dark",
             ],
-            "16:30 - 17:00" => [
+            "16:00 - 17:00" => [
                 "text" => "Свободно",
                 "color" => "dark",
             ],
@@ -147,7 +147,7 @@
 </div>
 <footer>
     <div class="text-center text-secondary">
-        &copy; bezrukavnikov.ru, 2021
+        &copy; <a href="https://bezrukavnikov.ru">bezrukavnikov.ru</a>, 2021
     </div>
 </footer>
 </body>
