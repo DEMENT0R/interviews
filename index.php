@@ -11,7 +11,6 @@
 <?php
 $darkMode = isset($_GET['dark']) ? true : false;
 $darkClass = $darkMode ? 'bg-dark text-light' : '';
-
 include('schedule.php');
 ?>
 <body class="<?= $darkClass ?>">
@@ -34,7 +33,7 @@ include('schedule.php');
                 <ul class="list-timeline list-timeline-primary">
                     <?php foreach ($day as $hours => $details): ?>
                         <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-                            <p class="my-0 text-<?= $darkMode ? 'light' : 'dark' ?> flex-fw text-sm text-uppercase">
+                            <p class="my-0 text-<?= $darkMode ? 'light' : 'dark' ?> flex-fw text-sm">
                                 <span class="text-<?= $details['color'] ?> font-weight-bold op-8"><?= $hours; ?></span>
                                 - <?= $details['text'] ?></p>
                         </li>
