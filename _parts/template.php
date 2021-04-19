@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="/css/styles.css?v2">
     <link rel="icon" href="/favicon.png">
     <title>Расписание встреч</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17583218-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-17583218-3');
+    </script>
 </head>
 <body class="<?= $darkClass ?>">
 <div class="container py-7 <?= $darkClass ?>">
