@@ -8,7 +8,7 @@ $days = [
         "16:00 - 17:00" => STATUSES['AVAILABLE'],
     ],
     "Вторник, 20 апреля" => [
-        "13:00 - 14:00" => STATUSES['AVAILABLE'],
+        "13:00 - 14:00" => STATUSES['CALL'],
         "14:00 - 15:00" => STATUSES['AVAILABLE'],
         "15:00 - 16:30" => STATUSES['INTERVIEW'],
         "16:30 - 17:00" => STATUSES['AVAILABLE'],
