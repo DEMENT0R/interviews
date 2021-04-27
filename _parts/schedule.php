@@ -40,6 +40,8 @@ $days = [
         "16:00 - 17:00" => STATUSES['UNAVAILABLE'],
     ],
     "Вторник, 4 мая" => [
+        "13:00 - 14:00" => STATUSES['AVAILABLE'],
         "14:30 - 16:00" => STATUSES['INTERVIEW'],
+        "16:00 - 17:00" => STATUSES['AVAILABLE'],
     ],
 ];
