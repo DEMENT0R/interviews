@@ -1,6 +1,6 @@
 <?php
 
-$startingDay = 26;
+$startingDay = 3;
 
 $days = [
     "Понедельник, " . $startingDay++ . " мая" => [
