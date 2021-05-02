@@ -3,45 +3,40 @@
 $startingDay = 26;
 
 $days = [
-    "Понедельник, " . $startingDay++ . " апреля" => [
-        "13:00 - 14:00" => STATUSES['UNAVAILABLE'],
-        "14:00 - 15:00" => STATUSES['CANCEL'],
-        "15:00 - 16:00" => STATUSES['INTERVIEW'],
-        "16:00 - 17:00" => STATUSES['AVAILABLE'],
-    ],
-    "Вторник, " . $startingDay++ . " апреля" => [
-        "13:00 - 14:00" => STATUSES['AVAILABLE'],
-        "14:00 - 15:00" => STATUSES['AVAILABLE'],
-        "15:00 - 16:00" => STATUSES['INTERVIEW'],
-        "16:00 - 17:00" => STATUSES['AVAILABLE'],
-    ],
-    "Среда, " . $startingDay++ . " апреля" => [
-        "13:00 - 14:00" => STATUSES['CALL'],
-        "14:00 - 15:00" => STATUSES['AVAILABLE'],
-        "15:00 - 16:00" => STATUSES['AVAILABLE'],
-        "16:00 - 17:00" => STATUSES['AVAILABLE'],
-    ],
-    "Четверг, " . $startingDay++ . " апреля" => [
-        "13:00 - 14:00" => STATUSES['AVAILABLE'],
-        "14:00 - 15:00" => STATUSES['AVAILABLE'],
-        "15:00 - 16:00" => STATUSES['CALL'],
-        "16:00 - 17:00" => STATUSES['INTERVIEW'],
-    ],
-    "Пятница, " . $startingDay++ . " апреля" => [
-        "13:00 - 14:00" => STATUSES['UNAVAILABLE'],
-        "14:00 - 15:00" => STATUSES['AVAILABLE'],
-        "15:00 - 16:00" => STATUSES['AVAILABLE'],
-        "16:00 - 17:00" => STATUSES['AVAILABLE'],
-    ],
-    "Суббота, 1 мая" => [
+    "Понедельник, " . $startingDay++ . " мая" => [
         "13:00 - 14:00" => STATUSES['UNAVAILABLE'],
         "14:00 - 15:00" => STATUSES['UNAVAILABLE'],
         "15:00 - 16:00" => STATUSES['UNAVAILABLE'],
         "16:00 - 17:00" => STATUSES['UNAVAILABLE'],
     ],
-    "Вторник, 4 мая" => [
+    "Вторник, " . $startingDay++ . " мая" => [
         "13:00 - 14:00" => STATUSES['AVAILABLE'],
+        "14:00 - 14:30" => STATUSES['UNAVAILABLE'],
         "14:30 - 16:00" => STATUSES['INTERVIEW'],
         "16:00 - 17:00" => STATUSES['INTERVIEW'],
+    ],
+    "Среда, " . $startingDay++ . " мая" => [
+        "13:00 - 14:00" => STATUSES['AVAILABLE'],
+        "14:00 - 15:00" => STATUSES['AVAILABLE'],
+        "15:00 - 16:00" => STATUSES['AVAILABLE'],
+        "16:00 - 17:00" => STATUSES['AVAILABLE'],
+    ],
+    "Четверг, " . $startingDay++ . " мая" => [
+        "13:00 - 14:00" => STATUSES['AVAILABLE'],
+        "14:00 - 15:00" => STATUSES['AVAILABLE'],
+        "15:00 - 16:00" => STATUSES['AVAILABLE'],
+        "16:00 - 17:00" => STATUSES['AVAILABLE'],
+    ],
+    "Пятница, " . $startingDay++ . " мая" => [
+        "13:00 - 14:00" => STATUSES['AVAILABLE'],
+        "14:00 - 15:00" => STATUSES['AVAILABLE'],
+        "15:00 - 16:00" => STATUSES['AVAILABLE'],
+        "16:00 - 17:00" => STATUSES['AVAILABLE'],
+    ],
+    "Суббота, " . $startingDay++ . " мая" => [
+        "13:00 - 14:00" => STATUSES['UNAVAILABLE'],
+        "14:00 - 15:00" => STATUSES['UNAVAILABLE'],
+        "15:00 - 16:00" => STATUSES['UNAVAILABLE'],
+        "16:00 - 17:00" => STATUSES['UNAVAILABLE'],
     ],
 ];
