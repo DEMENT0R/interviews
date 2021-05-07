@@ -1,6 +1,6 @@
 <?php
 
-$startingDay = 3;
+$startingDay = 10;
 
 $days = [
     "Понедельник, " . $startingDay++ . " мая" => [
@@ -10,10 +10,10 @@ $days = [
         "16:00 - 17:00" => STATUSES['UNAVAILABLE'],
     ],
     "Вторник, " . $startingDay++ . " мая" => [
-        "13:00 - 14:00" => STATUSES['AVAILABLE'],
-        "14:00 - 14:30" => STATUSES['UNAVAILABLE'],
-        "14:30 - 16:00" => STATUSES['INTERVIEW'],
-        "16:00 - 17:00" => STATUSES['INTERVIEW'],
+        "13:00 - 14:00" => STATUSES['UNAVAILABLE'],
+        "14:00 - 15:00" => STATUSES['INTERVIEW'],
+        "15:00 - 16:00" => STATUSES['INTERVIEW'],
+        "16:00 - 17:00" => STATUSES['AVAILABLE'],
     ],
     "Среда, " . $startingDay++ . " мая" => [
         "13:00 - 14:00" => STATUSES['AVAILABLE'],
@@ -38,11 +38,5 @@ $days = [
         "14:00 - 15:00" => STATUSES['UNAVAILABLE'],
         "15:00 - 16:00" => STATUSES['UNAVAILABLE'],
         "16:00 - 17:00" => STATUSES['UNAVAILABLE'],
-    ],
-    "Вторник, " . "11" . " мая" => [
-        "13:00 - 14:00" => STATUSES['UNAVAILABLE'],
-        "14:00 - 15:00" => STATUSES['INTERVIEW'],
-        "15:00 - 16:00" => STATUSES['INTERVIEW'],
-        "16:00 - 17:00" => STATUSES['AVAILABLE'],
     ],
 ];
