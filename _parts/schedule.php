@@ -16,8 +16,8 @@ $days = [
         "16:00 - 17:00" => STATUSES['AVAILABLE'],
     ],
     "Среда, " . $startingDay++ . " мая" => [
-        "13:00 - 14:00" => STATUSES['AVAILABLE'],
-        "14:00 - 15:00" => STATUSES['AVAILABLE'],
+        "13:00 - 14:00" => STATUSES['CALL'],
+        "14:00 - 15:00" => STATUSES['CALL'],
         "15:00 - 16:00" => STATUSES['AVAILABLE'],
         "16:00 - 17:00" => STATUSES['AVAILABLE'],
     ],
