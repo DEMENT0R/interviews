@@ -10,3 +10,5 @@ $hoursList = [
     '15:00 - 16:00' => STATUSES['AVAILABLE'],
     '16:00 - 17:00' => STATUSES['AVAILABLE'],
 ];
+
+$currentDate = date("Y-m-d", time());

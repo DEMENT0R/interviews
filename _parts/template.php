@@ -39,7 +39,7 @@
                 continue;
             }
             ?>
-            <div class="col-md-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-3<?= $currentDate == $date ? ' border rounded' : '' ?>">
                 <h4 class="mt-0 mb-3 text-<?= $darkMode ? 'light' : 'dark' ?> op-8 font-weight-bold">
                     <?= strftime("%A, %B, %d", strtotime($date)); ?>
                 </h4>
