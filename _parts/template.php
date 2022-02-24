@@ -35,7 +35,7 @@
     <div class="row">
         <?php foreach ($dates as $key => $date): ?>
             <?php
-            if (strftime("%A", strtotime($date)) == 'воскресенье') {
+            if (strftime("%A", strtotime($date)) == 'воскресенье' || strftime("%A", strtotime($date)) == 'Воскресенье') {
                 continue;
             }
             ?>
