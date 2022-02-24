@@ -31,19 +31,24 @@
         Расписание встреч
     </h2>
     <p class="text-sm text-<?= $darkMode ? 'light' : 'dark' ?> mt-0 mb-5">Время указано московское, обычно
-        13:00-17:00</p>
+        12:00-17:00</p>
     <div class="row">
-        <?php foreach ($days as $key => $day): ?>
+        <?php foreach ($dates as $key => $date): ?>
+            <?php
+            if (strftime("%A", strtotime($date)) == 'воскресенье') {
+                continue;
+            }
+            ?>
             <div class="col-md-6 col-lg-4 mb-3">
                 <h4 class="mt-0 mb-3 text-<?= $darkMode ? 'light' : 'dark' ?> op-8 font-weight-bold">
-                    <?= $key ?>
+                    <?= strftime("%B, %d, %A", strtotime($date)); ?>
                 </h4>
                 <ul class="list-timeline list-timeline-primary">
-                    <?php foreach ($day as $hours => $details): ?>
+                    <?php foreach ($hoursList as $hours => $details): ?>
                         <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
                             <p class="my-0 text-<?= $darkMode ? 'light' : 'dark' ?> flex-fw text-sm">
-                                <span class="text-<?= $details['color'] ?> font-weight-bold op-8"><?= $hours; ?></span>
-                                - <?= $details['text'] ?></p>
+                                <span class="text-<?= $events[$date][$hours]['color'] ?? $details['color'] ?> font-weight-bold op-8"><?= $hours ?></span>
+                                — <?= $events[$date][$hours]['text'] ?? $details['text'] ?></p>
                         </li>
                     <?php endforeach; ?>
                 </ul>
