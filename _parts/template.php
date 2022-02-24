@@ -58,7 +58,7 @@
 </div>
 <footer>
     <div class="text-center text-secondary">
-        &copy; <a href="https://bezrukavnikov.ru" class="text-secondary">bezrukavnikov.ru</a>, 2021
+        &copy; <a href="https://bezrukavnikov.ru" class="text-secondary">bezrukavnikov.ru</a>, 2022
     </div>
 </footer>
 </body>
