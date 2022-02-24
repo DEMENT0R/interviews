@@ -41,7 +41,7 @@
             ?>
             <div class="col-md-6 col-lg-4 mb-3">
                 <h4 class="mt-0 mb-3 text-<?= $darkMode ? 'light' : 'dark' ?> op-8 font-weight-bold">
-                    <?= strftime("%B, %d, %A", strtotime($date)); ?>
+                    <?= strftime("%A, %B, %d", strtotime($date)); ?>
                 </h4>
                 <ul class="list-timeline list-timeline-primary">
                     <?php foreach ($hoursList as $hours => $details): ?>
