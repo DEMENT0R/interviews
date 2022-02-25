@@ -1,6 +1,7 @@
 <?php
 
-$date  = strtotime('monday this week');
+$date  = $_GET['next_week'] ? strtotime('monday next week') : strtotime('monday this week');
+
 $dates = [];
 for ($i = 0; $i < 7; $i++) {
     $dates[] = date("Y-m-d", strtotime('+' . $i . ' day', $date));

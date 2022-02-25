@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/styles.css?v2">
     <link rel="icon" href="/favicon.png">
     <title>Расписание встреч</title>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17583218-3"></script>
     <script>
@@ -31,11 +31,13 @@
         Расписание встреч
     </h2>
     <p class="text-sm text-<?= $darkMode ? 'light' : 'dark' ?> mt-0 mb-5">Время указано московское, обычно
-        12:00-17:00</p>
+        12:00-17:00
+    </p>
     <div class="row">
         <?php foreach ($dates as $key => $date): ?>
             <?php
-            if (strftime("%A", strtotime($date)) == 'воскресенье' || strftime("%A", strtotime($date)) == 'Воскресенье') {
+            if (strftime("%A", strtotime($date)) == 'воскресенье'
+                || strftime("%A", strtotime($date)) == 'Воскресенье') {
                 continue;
             }
             ?>
@@ -43,17 +45,35 @@
                 <h4 class="mt-0 mb-3 text-<?= $darkMode ? 'light' : 'dark' ?> op-8 font-weight-bold">
                     <?= strftime("%A, %B, %d", strtotime($date)); ?>
                 </h4>
+                <h5>
+
+                </h5>
                 <ul class="list-timeline list-timeline-primary">
                     <?php foreach ($hoursList as $hours => $details): ?>
                         <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
                             <p class="my-0 text-<?= $darkMode ? 'light' : 'dark' ?> flex-fw text-sm">
-                                <span class="text-<?= $events[$date][$hours]['color'] ?? $details['color'] ?> font-weight-bold op-8"><?= $hours ?></span>
+                                <span class="text-<?= $events[$date][$hours]['color']
+                                ??
+                                $details['color'] ?> font-weight-bold op-8"><?= $hours ?></span>
                                 — <?= $events[$date][$hours]['text'] ?? $details['text'] ?></p>
                         </li>
                     <?php endforeach; ?>
                 </ul>
             </div>
         <?php endforeach; ?>
+    </div>
+    <div class="<?= $_GET['next_week'] ? 'text-left' : 'text-right' ?>">
+        <?php if (!$_GET['next_week']): ?>
+            <a href="?next_week=1<?= $darkMode ? '&dark=1' : '' ?>"
+               class="btn btn-secondary">
+                Следующая неделя
+            </a>
+        <?php else: ?>
+            <a href="?<?= $darkMode ? 'dark=1' : '' ?>"
+               class="btn btn-secondary">
+                Текущая неделя
+            </a>
+        <?php endif; ?>
     </div>
 </div>
 <footer>

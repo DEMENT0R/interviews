@@ -1,6 +1,6 @@
 <?php
 
-$darkMode  = isset($_GET['dark']) ? true : false;
+$darkMode  = isset($_GET['dark']);
 $darkClass = $darkMode ? 'bg-dark text-light' : '';
 
 $hoursList = [
