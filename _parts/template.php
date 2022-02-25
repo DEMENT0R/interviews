@@ -42,12 +42,12 @@
             }
             ?>
             <div class="col-md-6 col-lg-4 mb-3<?= $currentDate == $date ? ' border rounded' : '' ?>">
-                <h4 class="mt-0 mb-3 text-<?= $darkMode ? 'light' : 'dark' ?> op-8 font-weight-bold">
-                    <?= strftime("%A, %B, %d", strtotime($date)); ?>
+                <h4 class="mt-0 text-<?= $darkMode ? 'light' : 'dark' ?> op-8 font-weight-bold">
+                    <?= strftime("%A", strtotime($date)); ?>
                 </h4>
-                <h5>
-
-                </h5>
+                <p class="text-secondary">
+                    <?= strftime("%B, %d", strtotime($date)); ?>
+                </p>
                 <ul class="list-timeline list-timeline-primary">
                     <?php foreach ($hoursList as $hours => $details): ?>
                         <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
