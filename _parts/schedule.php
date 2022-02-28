@@ -10,11 +10,12 @@ for ($i = 0; $i < 7; $i++) {
 setlocale(LC_ALL, 'ru_RU.UTF-8');
 
 $events = [
-    '2022-02-21' => HOLIDAY,
-    '2022-02-22' => HOLIDAY,
     '2022-02-23' => HOLIDAY,
     '2022-02-25' => [
         '12:00 - 13:00' => STATUSES['INTERVIEW'],
         '16:00 - 17:00' => STATUSES['CALL'],
+    ],
+    '2022-03-02' => [
+        '12:00 - 13:00' => STATUSES['INTERVIEW'],
     ],
 ];
