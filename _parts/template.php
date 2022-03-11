@@ -64,18 +64,23 @@
             </div>
         <?php endforeach; ?>
     </div>
-    <div class="<?= $_GET['next_week'] ? 'text-left' : 'text-right' ?>">
-        <?php if (!$_GET['next_week']): ?>
-            <a href="?next_week=1<?= $darkMode ? '&dark=1' : '' ?>"
-               class="btn btn-secondary">
-                Следующая неделя
-            </a>
-        <?php else: ?>
-            <a href="?<?= $darkMode ? 'dark=1' : '' ?>"
-               class="btn btn-secondary">
-                Текущая неделя
-            </a>
-        <?php endif; ?>
+    <div class="row">
+        <div class="col-12 col-md-6 text-left w-100">
+            <?php if ($leftButton): ?>
+                <a href="<?= $leftButton['link'] ?><?= $darkMode ? '&dark=1' : '' ?>"
+                   class="btn btn-secondary">
+                    <?= $leftButton['title'] ?>
+                </a>
+            <?php endif; ?>
+        </div>
+        <div class="col-12 col-md-6 text-right w-100">
+            <?php if ($rightButton): ?>
+                <a href="<?= $rightButton['link'] ?><?= $darkMode ? '&dark=1' : '' ?>"
+                   class="btn btn-secondary">
+                    <?= $rightButton['title'] ?>
+                </a>
+            <?php endif; ?>
+        </div>
     </div>
 </div>
 <footer>

@@ -30,3 +30,16 @@ const HOLIDAY = [
     '15:00 - 16:00' => STATUSES['UNAVAILABLE'],
     '16:00 - 17:00' => STATUSES['UNAVAILABLE'],
 ];
+
+const THIS_WEEK = [
+    'link'   => '/?',
+    'title' => 'Текущая неделя',
+];
+const NEXT_WEEK = [
+    'link'   => '/?next_week=1',
+    'title' => 'Следующая неделя',
+];
+const LAST_WEEK = [
+    'link'   => '/?last_week=1',
+    'title' => 'Прошлая неделя',
+];

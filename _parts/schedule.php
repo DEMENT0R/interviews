@@ -1,6 +1,18 @@
 <?php
 
-$date  = $_GET['next_week'] ? strtotime('monday next week') : strtotime('monday this week');
+if ($_GET['next_week']) {
+    $date = strtotime('monday next week');
+    $leftButton = THIS_WEEK;
+    $rightButton = [];
+} else if ($_GET['last_week']) {
+    $date = strtotime('monday last week');
+    $leftButton = [];
+    $rightButton = THIS_WEEK;
+} else {
+    $date = strtotime('monday this week');
+    $leftButton = LAST_WEEK;
+    $rightButton = NEXT_WEEK;
+}
 
 $dates = [];
 for ($i = 0; $i < 7; $i++) {
