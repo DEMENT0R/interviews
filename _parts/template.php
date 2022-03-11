@@ -37,7 +37,9 @@
         <?php foreach ($dates as $key => $date): ?>
             <?php
             if (strftime("%A", strtotime($date)) == 'воскресенье'
-                || strftime("%A", strtotime($date)) == 'Воскресенье') {
+                || strftime("%A", strtotime($date)) == 'Воскресенье'
+                || strftime("%A", strtotime($date)) == 'sunday'
+                || strftime("%A", strtotime($date)) == 'Sunday') {
                 continue;
             }
             ?>
