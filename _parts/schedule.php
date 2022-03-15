@@ -49,4 +49,7 @@ $events = [
         '12:00 - 13:00' => STATUSES['CANCEL'],
         '14:00 - 15:00' => STATUSES['INTERVIEW'],
     ],
+    '2022-03-15' => [
+        '14:00 - 15:00' => STATUSES['CALL'],
+    ],
 ];
