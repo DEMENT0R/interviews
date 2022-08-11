@@ -74,12 +74,17 @@ $events = [
         '14:00 - 15:00' => STATUSES['INTERVIEW'],
     ],
     '2022-08-08' => [
+        '13:00 - 14:00' => STATUSES['CALL'],
         '14:00 - 15:00' => STATUSES['INTERVIEW'],
+    ],
+    '2022-08-09' => [
+        '14:00 - 15:00' => STATUSES['CALL'],
     ],
     '2022-08-12' => [
         '14:00 - 15:00' => STATUSES['INTERVIEW'],
     ],
     '2022-08-15' => [
-        '14:30 - 16:00' => STATUSES['INTERVIEW'],
+        '14:00 - 15:00' => STATUSES['INTERVIEW'],
+        '15:00 - 16:00' => STATUSES['INTERVIEW'],
     ],
 ];
