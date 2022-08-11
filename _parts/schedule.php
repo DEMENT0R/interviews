@@ -80,6 +80,6 @@ $events = [
         '14:00 - 15:00' => STATUSES['INTERVIEW'],
     ],
     '2022-08-15' => [
-        '14:00 - 15:00' => STATUSES['INTERVIEW'],
+        '14:30 - 16:00' => STATUSES['INTERVIEW'],
     ],
 ];
