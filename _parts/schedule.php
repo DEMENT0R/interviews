@@ -1,10 +1,10 @@
 <?php
 
-if ($_GET['next_week']) {
+if (isset($_GET['next_week'])) {
     $date = strtotime('monday next week');
     $leftButton = THIS_WEEK;
     $rightButton = [];
-} else if ($_GET['last_week']) {
+} else if (isset($_GET['last_week'])) {
     $date = strtotime('monday last week');
     $leftButton = [];
     $rightButton = THIS_WEEK;
