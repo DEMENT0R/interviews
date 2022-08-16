@@ -1,26 +1,5 @@
 <?php
 
-if (isset($_GET['next_week'])) {
-    $date = strtotime('monday next week');
-    $leftButton = THIS_WEEK;
-    $rightButton = [];
-} else if (isset($_GET['last_week'])) {
-    $date = strtotime('monday last week');
-    $leftButton = [];
-    $rightButton = THIS_WEEK;
-} else {
-    $date = strtotime('monday this week');
-    $leftButton = LAST_WEEK;
-    $rightButton = NEXT_WEEK;
-}
-
-$dates = [];
-for ($i = 0; $i < 7; $i++) {
-    $dates[] = date("Y-m-d", strtotime('+' . $i . ' day', $date));
-}
-
-setlocale(LC_ALL, 'ru_RU.UTF-8');
-
 $events = [
     '2022-02-23' => HOLIDAY,
     '2022-02-25' => [
