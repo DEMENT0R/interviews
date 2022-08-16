@@ -51,7 +51,8 @@
                     <?= strftime("%B, %d", strtotime($date)); ?>
                 </p>
                 <ul class="list-timeline list-timeline-primary">
-                    <?php foreach ($hoursList as $hours => $details): ?>
+                    <?php $slots =  $date >= $currentDate ? $hoursListAvailable : $hoursListUnavailable ?>
+                    <?php foreach ($slots as $hours => $details): ?>
                         <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
                             <p class="my-0 text-<?= $darkMode ? 'light' : 'dark' ?> flex-fw text-sm">
                                 <span class="text-<?= $events[$date][$hours]['color']
