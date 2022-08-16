@@ -31,7 +31,7 @@
         Расписание встреч
     </h2>
     <p class="text-sm text-<?= $darkMode ? 'light' : 'dark' ?> mt-0 mb-5">Время указано московское, обычно
-        12:00-17:00
+        10:00-17:00
     </p>
     <div class="row">
         <?php foreach ($dates as $key => $date): ?>
